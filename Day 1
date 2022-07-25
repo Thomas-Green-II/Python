@@ -1,0 +1,62 @@
+#!/usr/bin/python3
+
+user_input = input("what is your username: ")
+print ("Hello {} welcome to usmc.mil" .format(user_input)) <-------- The {} will be replaced with the variable called User_Input
+
+
+
+NEW SCRIPT
+    |
+    |
+    V
+#!/usr/bin/python3
+
+user_input = input("Enter your email address (Format being first.middle.Last@domain.com): ")
+
+emailsplit = user_input.split(".")   <---------Splits at every "."
+emailsplit2 = user_input.split("@")  <---------Splits at every "@"
+
+
+print ("Good Morning {}, welcome to {}".format(emailsplit[0],emailsplit2[1])) <----------- The 0 and 1 represent the index postition after the split occurs
+
+
+
+NEW SCRIPT 
+    |
+    |
+    V
+#!/usr/bin/python3
+
+usernumber = input ("enter a number: ")
+
+usernumber = int(usernumber)   <----------- changes the string into an integer
+
+if usernumber < 50 and usernumber <=100 :                      <------------ "and" both have to be true
+  print("This number is less than fifty and less than or equal to 100)
+elif usernumber > 100 or usernumber < 100:                     <------------ "or" only one of the statements has to be true
+  print("this number is greater than 100 or greater than 100")
+else
+  print("Catch all nothing matched")
+ 
+ 
+ 
+  NEW SCRIPT (EXERCISE)
+  Modify deliverable.py so that it takes a number from the user and prints it (the number) if it isn't divisible by 3 or 5. For multiples 
+  of 3 print 'fizz' instead. For multiples of 5 print 'buzz' instead. For multiples of 3 and 5 print 'fizzbuzz'.
+    |
+    |
+    V
+  
+ #!/usr/bin/env python3
+ 
+ user_input = input("Enter a number: ")
+ user_input = int(user_input)
+ 
+ if  user_input %3 == 0 and user_input %5 == 0:
+     print ("{} is fizzbuzz" .format(user_input))
+ elif user_input % 5 == 0:
+     print ("{} is Buzz" .format(user_input))
+ elif user_input %3 == 0:
+     print ("{} is fizz".format(user_input))
+ else:
+ print ("No fizz or buzz")                                
