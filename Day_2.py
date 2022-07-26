@@ -31,8 +31,6 @@ while count < 10:
     print("the count is: {} ".format(count))
     break
  
-
-
 NEW SCRIPT
     |
     |
@@ -78,7 +76,6 @@ NEW SCRIPT
              Wrong = False   # <---------- Indicator that the while loop stops
   guess_number(23)          # <---------- function call
 
-  
   NEW SCRIPT
       |
       |
@@ -92,8 +89,24 @@ for num in l:
     
     
     newl = []
-    counter = 0
         for num in l:
             newl.append = str(255 - int(x))      # <--------- .append appends the string in this line to the end of the empty string mentioned in 94
-            counter += 1
-        return newl
+            return newl
+
+  
+NEW SCRIPT
+    |
+    V 
+    
+#!/usr/bin/python3
+
+with open('test.txt', 'r')as myfile:
+    content = myfile.read(#)    # <------------ read, readline, readlines  =  read the file, read the first line, or read every character of the lines
+                                            #    including their symbols. The '#' indicates a possible number of byytes wanted to be read from the file.
+    print(content)
+        
+        
+#!/usr/bin/python3
+        
+with open('test.txt', 'w')as myfile
+        myfile.write("My first line") <------ Writes/Overwrites a file
