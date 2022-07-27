@@ -80,3 +80,11 @@ with open('school_prompt.txt', 'r')as fp:
         
         
         
+# Copy one file to another
+
+with open('originalfile.txt', 'r')as fp0:
+  contents = fp0.read()        <-------- # can be readlines but the write must be writelines
+  
+with open('newfile.txt', 'w')as fp1:
+          fp1.write(contents)
+        
