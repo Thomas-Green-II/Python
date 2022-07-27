@@ -32,11 +32,11 @@ def steg_encode_char(char, cover):
 
 
         for i in range(0,8):
-            coverbinl = list(binary1)
+            coverbinl = list(format(int(cover[i]), '0>8b'))
             coverbinl[-1] = binary1[i]
-            cover[i] = int(''.join(coverbinl), base=2)
+            cover[i] = str(int(''.join(coverbinl), base=2))    <----------- # join it with nothing with the ''.join function,
+                                                                            # then changes it back to a string
             
-
 
 def steg_decode_char(stego):
     '''LSB decodes a character
@@ -51,4 +51,3 @@ def steg_decode_char(stego):
         msgbits.append(bin(item)[-1])
 
     chr(int(''.join(msgbits),base=2))
-    return msgbits
