@@ -1,3 +1,8 @@
+#read = Gathers the document and presents it as a string, when using when you use an index it grabs the letter
+#readlines = shows every character in the document, when using an index it grabs a line
+
+
+
 # The textfile, travel_plans.txt, contains the summer travel plans for someone with some commentary. Find the total 
 # number of characters in the file and save to the variable num.
 
