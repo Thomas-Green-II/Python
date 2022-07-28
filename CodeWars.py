@@ -44,7 +44,7 @@ def find_next_square(sq):
 
 # Write function bmi that calculates body mass index (bmi = weight / height2).
 def bmi(weight, height):
-    fat = (weight / (height ** 2))
+    fat = (weight / (height ** 2))   <------------ #    "**" represents squaring
     
     if fat <= 18.5:
         return "Underweight"
