@@ -39,3 +39,18 @@ def find_next_square(sq):
     import math as m
     
     return ((m.sqrt(sq) + 1)**2) if m.sqrt(sq).is_integer() else -1
+
+
+
+# Write function bmi that calculates body mass index (bmi = weight / height2).
+def bmi(weight, height):
+    fat = (weight / (height ** 2))
+    
+    if fat <= 18.5:
+        return "Underweight"
+    elif fat <= 25.0:
+        return "Normal"
+    elif fat <= 30.0:
+        return "Overweight"
+    else:
+        return "Obese"
