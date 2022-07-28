@@ -54,3 +54,13 @@ def bmi(weight, height):
         return "Overweight"
     else:
         return "Obese"
+    
+    
+    
+    
+ # Given an array of integers, return a new array with each value doubled
+def maps(a):
+    b = []
+     for item in a:
+        b.append((int(item) * 2))
+    return b
