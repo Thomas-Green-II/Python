@@ -64,3 +64,14 @@ def maps(a):
      for item in a:
         b.append((int(item) * 2))
     return b
+
+# Create a function which translates a given DNA string into RNA.
+# For example:        "GCAT"  =>  "GCAU"
+def dna_to_rna(dna):
+    dna = list(dna)
+    counter = 0
+    for i in dna:
+        if i == 'T':
+            dna[counter] = 'U'
+        counter += 1
+    return ''.join(dna)
