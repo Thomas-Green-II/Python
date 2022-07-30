@@ -112,3 +112,9 @@ def sum_mix(arr):
 # You receive an array with your peers' test scores. Now calculate the average and compare your score!
 def better_than_average(class_points, your_points):
     return your_points > sum(class_points) / len(class_points)
+
+# Write a function to convert a name into initials. This kata strictly takes two words with one space in between them. The output should be two capital letters with a dot separating them.
+def abbrevName(name):
+    name=name.upper()
+    n=name.split()
+    return n[0][0]+'.'+n[1][0]
