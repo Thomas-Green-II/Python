@@ -85,3 +85,21 @@ def remove_char(s):
 # Complete the solution so that it reverses the string passed into it.
 def solution(string):
     return ''.join(list(reversed(string)))
+
+
+# Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
+def count_sheep(n):
+    s = ""
+    i = 1
+    while i <= n:
+        s += str(i)+" sheep..."
+        i += 1
+    return s
+
+# create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+def filter_list(l):
+    new_list =[]
+    for x in l:
+        if type(x) != str:
+            new_list.append(x)
+    return new_list
