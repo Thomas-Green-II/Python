@@ -75,3 +75,8 @@ def dna_to_rna(dna):
             dna[counter] = 'U'
         counter += 1
     return ''.join(dna)
+
+
+# Remove the first and last characters in a string
+def remove_char(s):
+    return s[1 : -1]
