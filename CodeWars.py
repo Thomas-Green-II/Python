@@ -118,3 +118,7 @@ def abbrevName(name):
     name=name.upper()
     n=name.split()
     return n[0][0]+'.'+n[1][0]
+
+# Return the Smallest number in a list
+def findSmallestInt(arr):
+    return min(arr)
