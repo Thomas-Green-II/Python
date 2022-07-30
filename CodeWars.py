@@ -80,3 +80,8 @@ def dna_to_rna(dna):
 # Remove the first and last characters in a string
 def remove_char(s):
     return s[1 : -1]
+
+
+# Complete the solution so that it reverses the string passed into it.
+def solution(string):
+    return ''.join(list(reversed(string)))
