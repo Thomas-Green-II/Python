@@ -138,8 +138,14 @@ def grow(arr):
         num = num * x
     return num
 
-# Given an array of integers, find the one that appears an odd number of times
+## Given an array of integers, find the one that appears an odd number of times
 def find_it(seq):
     for i in seq:
         if seq.count(i)%2!=0:
             return i
+
+        
+# return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters
+def get_middle(s):
+return s[(len(s)-1)//2:(len(s)+2)//2]
+
