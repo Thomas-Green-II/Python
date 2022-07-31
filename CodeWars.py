@@ -130,3 +130,10 @@ def square_digits(num):
     for i in lst:
         numbers.append(str(int(i)**2))
     return int("".join(numbers))
+
+# multiply numbers in a list together and return the result of the multiplication
+def grow(arr):
+    num = 1
+    for x in arr:
+        num = num * x
+    return num
