@@ -137,3 +137,9 @@ def grow(arr):
     for x in arr:
         num = num * x
     return num
+
+# Given an array of integers, find the one that appears an odd number of times
+def find_it(seq):
+    for i in seq:
+        if seq.count(i)%2!=0:
+            return i
