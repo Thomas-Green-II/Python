@@ -149,3 +149,6 @@ def find_it(seq):
 def get_middle(s):
 return s[(len(s)-1)//2:(len(s)+2)//2]
 
+# reate a function with two arguments that will return an array of the first (n) multiples of (x)
+return [i * x for i in range(1,n+1)]
+
