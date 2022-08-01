@@ -36,6 +36,7 @@ domain = 'cornetto'
 mylist = ['195' '168' '28' '50']
 myOctets[0:3]
 ['195' '168' '28']
+[:-1] <--------- # start at the beginning of the list and stop at the end of the list
              
 # RANGE
 list(range(0,10))
