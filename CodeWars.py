@@ -158,3 +158,13 @@ def areYouPlayingBanjo(name):
     if name[0].lower() == 'r':
         return "{} plays banjo".format(name)
     return "{} does not play banjo".format(name)
+
+
+#  create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!)
+#  and will, of course, return you to your starting point. Directions are in "n" "s" "e" "w".
+def isValidWalk(walk):
+    if (walk.count('n') == walk.count('s') and 
+        walk.count('e') == walk.count('w') and
+        len(walk) == 10):
+            return True
+    return False
