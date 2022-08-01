@@ -206,3 +206,11 @@ def number(lines):
     for x in range(len(lines)):
         formatted.append(str(x+1)+": "+lines[x])
     return formatted
+
+# print the number of multiples for the given number n
+def divisors(n):
+    count = 0
+    for i in range(1, n + 1):
+        if n / i % 1 == 0:
+            count += 1
+    return count
