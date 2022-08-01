@@ -7,6 +7,8 @@ space = "".join(x.split()) <--------- # to get rid of spaces entirely
 .endswith() # <-------- checks the ending of string for whatever you put in the parentheses.
 .remove # <--------- list.remove(min(numbers))         Removes the minimum number from a list
 .replace # <-------- return string.replace('1','I').replace('0','O').replace('5','S')       .replace replaces the first string with the second string
+.lower() #<------- str.lower() makes everything in that string lowercase
+
 
 #There is an array with some numbers. All numbers are equal except for one. Try to find it
 def find_uniq(arr):
@@ -214,3 +216,9 @@ def divisors(n):
         if n / i % 1 == 0:
             count += 1
     return count
+
+
+#You will be given a vector of strings. You must sort it alphabetically (case-sensitive, and based on the ASCII values of the chars) and then return the first value.
+#The returned value must be a string, and have "***" between each of its letters.
+def two_sort(lst):
+    return '***'.join(min(lst))
