@@ -178,3 +178,10 @@ def isValidWalk(walk):
 # 21    23    25    27    29
 def row_sum_odd_numbers(n):
     return n ** 3
+
+
+# "ATTGC" --> "TAACG"
+# "GTAT" --> "CATA"
+pairs = {'A':'T','T':'A','C':'G','G':'C'}
+def DNA_strand(dna):
+    return ''.join([pairs[x] for x in dna])
