@@ -152,3 +152,9 @@ return s[(len(s)-1)//2:(len(s)+2)//2]
 # reate a function with two arguments that will return an array of the first (n) multiples of (x)
 return [i * x for i in range(1,n+1)]
 
+
+# If your name starts with the letter "R" or lower case "r", you are playing banjo!
+def areYouPlayingBanjo(name):
+    if name[0].lower() == 'r':
+        return "{} plays banjo".format(name)
+    return "{} does not play banjo".format(name)
