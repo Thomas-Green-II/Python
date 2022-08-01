@@ -185,3 +185,8 @@ def row_sum_odd_numbers(n):
 pairs = {'A':'T','T':'A','C':'G','G':'C'}
 def DNA_strand(dna):
     return ''.join([pairs[x] for x in dna])
+
+
+# It should remove all values from list a, which are present in list b keeping their order.
+def array_diff(a, b):
+    return [x for x in a if x not in b]
