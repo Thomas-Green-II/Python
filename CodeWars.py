@@ -5,8 +5,8 @@ new = s.split(" ") <----------- # proper way to use split to set string "s" into
 space = "".join(x.split()) <--------- # to get rid of spaces entirely
 .count() # <-------- returns count of how many times obj occurs in list
 .endswith() # <-------- checks the ending of string for whatever you put in the parentheses.
-.remove # <--------- list.remove(min(numbers))         Removes the minimum number from a list
-.replace # <-------- return string.replace('1','I').replace('0','O').replace('5','S')       .replace replaces the first string with the second string
+.remove() # <--------- list.remove(min(numbers))         Removes the minimum number from a list
+.replace() # <-------- return string.replace('1','I').replace('0','O').replace('5','S')       .replace replaces the first string with the second string
 .lower() #<------- str.lower() makes everything in that string lowercase
 
 
