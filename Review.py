@@ -54,3 +54,11 @@ with open(infile, 'r') as fp0:
   lines0 = fp0.readlines()
 with open(outfile, 'w')as fp:
   fp.writelines(lines0)
+        
+        OR
+        
+with open(infile, 'r') as fp0:
+    with open(outfile, 'w')as fp:
+        fp.writelines(fp0.readlines()[2]) <-----# readlines puts the text in a list and the index of 2 grabs the second index of that list
+        
+        
