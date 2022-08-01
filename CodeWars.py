@@ -239,3 +239,18 @@ def how_much_i_love_you(nb_petals):
         return "madly"
     if n == 0:
         return "not at all"
+    
+    # Return a list of numbers in descending order
+    def Descending_Order(num):
+    s = str(num)
+    s = list(s)
+    s = sorted(s)
+    s = reversed(s)
+    s = ''.join(s)
+    return int(s)
+
+# find the difference of the cuboids' (a and b) volumes regardless of which is bigger.
+def find_difference(a, b):
+    a_volume = a[0] * a[1] * a[2]
+    b_volume = b[0] * b[1] * b[2]
+    return abs(a_volume - b_volume)
