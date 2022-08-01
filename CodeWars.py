@@ -3,8 +3,17 @@
 return" ".join(words) <-------- # proper way to join a list with just a space in between each item
 new = s.split(" ") <----------- # proper way to use split to set string "s" into a list based on spaces and calling it new
 space = "".join(x.split()) <--------- # to get rid of spaces entirely
-if (int(sum(arr) % 2)) == 0: <------------ # Given a list of integers, determine whether the sum of its elements is odd or even
+.count() # <-------- returns count of how many times obj occurs in list
+.endswith() # <-------- checks the ending of string for whatever you put in the parentheses.
+.remove # <--------- list.remove(min(numbers))         Removes the minimum number from a list
+.replace # <-------- return string.replace('1','I').replace('0','O').replace('5','S')       .replace replaces the first string with the second string
 
+#There is an array with some numbers. All numbers are equal except for one. Try to find it
+def find_uniq(arr):
+    s = set(arr)
+    for e in s:
+        if arr.count(e) == 1:
+            return e
 
 # To reverse the order of an input series of numbers
 def digitize(n):
@@ -190,3 +199,10 @@ def DNA_strand(dna):
 # It should remove all values from list a, which are present in list b keeping their order.
 def array_diff(a, b):
     return [x for x in a if x not in b]
+
+# ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
+def number(lines):
+    formatted=[]
+    for x in range(len(lines)):
+        formatted.append(str(x+1)+": "+lines[x])
+    return formatted
